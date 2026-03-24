@@ -39,7 +39,6 @@ const App = () => {
               <input
                 type="text"
                 value={username}
-                name="Username"
                 onChange={({ target }) => setUsername(target.value)}
               />
             </label>
@@ -50,7 +49,6 @@ const App = () => {
               <input
                 type="password"
                 value={password}
-                name="Password"
                 onChange={({ target }) => setPassword(target.value)}
               />
             </label>

@@ -78,7 +78,6 @@ const App = () => {
           <input
             type="text"
             value={username}
-            name="Username"
             onChange={({ target }) => setUsername(target.value)}
           />
         </div>
@@ -87,7 +86,6 @@ const App = () => {
           <input
             type="password"
             value={password}
-            name="Password"
             onChange={({ target }) => setPassword(target.value)}
           />
         </div>
@@ -103,27 +101,21 @@ const App = () => {
         <div>
           title:
           <input
-            type="text"
             value={title}
-            name="Title"
             onChange={({ target }) => setTitle(target.value)}
           />
         </div>
         <div>
           author:
           <input
-            type="text"
             value={author}
-            name="Author"
             onChange={({ target }) => setAuthor(target.value)}
           />
         </div>
         <div>
           url:
           <input
-            type="text"
             value={url}
-            name="Url"
             onChange={({ target }) => setUrl(target.value)}
           />
         </div>
