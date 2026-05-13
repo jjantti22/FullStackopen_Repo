@@ -24,7 +24,7 @@ const App = () => {
       <Button onClick={handleNeutralClick} text='neutral' />
       <Button onClick={handleBadClick} text='bad' />
       <h1>statistics</h1>
-      <Statistics goodClicks={good} neutralClicks={neutral} badClicks={bad}/>
+      <Statistics goodClicks={good} neutralClicks={neutral} badClicks={bad} />
     </div>
   )
 }
@@ -36,29 +36,29 @@ const Button = (props) => (
   </button>
 )
 const Statistics = (props) => {
-  const {goodClicks, neutralClicks, badClicks} = props
+  const { goodClicks, neutralClicks, badClicks } = props
   const totalClicks = goodClicks + neutralClicks + badClicks
   const average = (goodClicks - badClicks) / totalClicks
   const percent = goodClicks / totalClicks * 100
 
-  if(totalClicks > 0){
+  if (totalClicks > 0) {
     return (
 
-        <table>
-          <tbody>
-            <StatisticLine text="good" value ={goodClicks} />
-            <StatisticLine text="neutral" value ={neutralClicks} />
-            <StatisticLine text="bad" value ={badClicks} />
-            <StatisticLine text="all" value ={totalClicks} />
-            <StatisticLine text="average" value ={average} />
-            <StatisticLine text="positive" value ={percent + " %"} />
-          </tbody>
-        </table>
+      <table>
+        <tbody>
+          <StatisticLine text="good" value={goodClicks} />
+          <StatisticLine text="neutral" value={neutralClicks} />
+          <StatisticLine text="bad" value={badClicks} />
+          <StatisticLine text="all" value={totalClicks} />
+          <StatisticLine text="average" value={average} />
+          <StatisticLine text="positive" value={percent + " %"} />
+        </tbody>
+      </table>
 
     )
   }
   else {
-    return(
+    return (
       <div>
         <p>
           No feedback given
@@ -68,14 +68,14 @@ const Statistics = (props) => {
   }
 }
 const StatisticLine = (props) => {
-  const {text, value} = props
+  const { text, value } = props
 
-  return(
+  return (
 
-        <tr>
-          <td>{text}</td>
-          <td>{value} </td>
-        </tr>
+    <tr>
+      <td>{text}</td>
+      <td>{value} </td>
+    </tr>
 
   )
 }
