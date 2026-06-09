@@ -1,0 +1,10 @@
+POST http://localhost:3001/api/blogs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhlbGxhcyIsImlkIjoiNjliMWQ5Y2E2YjdlOWNiYTZiYTljNjUxIiwiaWF0IjoxNzczMjY1ODE3fQ.VsDRNn1HsQYsxSJZMV4USpgJeZbIcnE8x6eZu3wffEg
+Content-Type: application/json
+
+{
+  "title": "Authorized blog2",
+  "author": "Arto Hellas",
+  "url": "https://bloggers.com",
+  "likes": 2001
+}
